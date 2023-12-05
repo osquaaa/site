@@ -460,4 +460,13 @@ body {
   .control{
     z-index: 10;
   }
+  .pepe-pizza::after{
+    font-size: 18px;
+    padding-left:10px ;
+    color: rgb(255, 98, 0);
+  }
+  .hawa-pizza::after{
+    font-size: 18px;
+    padding-left: 10px;
+  }
 }
