@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>DodoSpassk</title>
 </head>
 <body>
     <ul class="menu-bar" id="menu-bar">
         <div class="logo">
             <img class="logo-img" src="https://e7.pngegg.com/pngimages/832/246/png-clipart-domino-s-pizza-miraculous-ladybug-cat-noir-the-official-game-dodo-pizza-pizza-pizza-pizza-food-orange-thumbnail.png" alt="" >
         </div>
+        <div onclick="openNav()" class="hamburger-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+          
         <li class="tablinks" onclick="openTurn(event, 'pizza')" id="defaultOpen">Pizza</li>
         <li class="tablinks" onclick="openTurn(event, 'rolls')">Rolls</li>
         <li class="tablinks" onclick="openTurn(event, 'basket')">Basket</li>
         <li class="tablinks" onclick="openTurn(event, '#')">Library</li>
       </ul>
 
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <li class="tablinks" onclick="openTurn(event, 'pizza')" id="defaultOpen">Pizza</li>
+            <li class="tablinks" onclick="openTurn(event, 'rolls')">Rolls</li>
+            <li class="tablinks" onclick="openTurn(event, 'basket')">Basket</li>
+            <li class="tablinks" onclick="openTurn(event, '#')">Library</li>
+        </div>
+      
+      </div>
       <div id="pizza" class="tabcontent">
 
 
@@ -27,14 +50,12 @@
       <div id="container">	
         
 	
-        <!-- Start	Product details -->
+
             <div class="product-details">
-                
-                <!-- 	Product Name -->
+
+
             <h1 class="pepe-pizza">PEPPERONI</h1>
-        <!-- 		<span class="hint new">New</span> -->
-        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
-        <!-- 		the Product rating -->
+
 
                 
             

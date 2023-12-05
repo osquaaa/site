@@ -1,3 +1,9 @@
+if (window.matchMedia("(min-width: 500px)").matches) {
+  // ... ваша логика
+  // которая не станет выполняться
+  // если размер больше 540px
+
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -8,7 +14,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-
+}
 
 
 function openTurn(evt, cityName) {
@@ -36,3 +42,13 @@ document.getElementById("defaultOpen").click();
 
 
 
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
